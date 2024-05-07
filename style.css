@@ -1,0 +1,369 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.header{
+    background-color: #e82929;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: #fef2f2;
+
+}
+.email{
+    border-right: solid 1px white;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+.location{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.location div{
+    margin-right: 10px;
+}
+.location a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: #fef2f2;
+}
+.location a:hover{
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 0 ;
+    box-shadow: -1px 1px 5px black;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    margin-left: -200px;
+}
+.navBtns a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #00002c;
+
+}
+.navBtns a:hover{
+    color: #e82929;
+}
+.navBtns a:active{
+    color: #e82929;
+}
+
+
+.hero{
+    height: 600px;
+    margin-bottom: 10px;
+    background-color: #181f32;
+    color: #fef2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-content h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #0000ac;
+}
+.hero-content p{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hero-content a{
+    text-decoration: none;
+    color: #e82929;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.hero-content a:active{
+    background-color: white;
+    color: #181f32;
+}
+
+
+
+.about{
+    background-color: #e3ecef;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    margin: 60px 0 30px 0;
+    padding: 80px;
+}
+.texts h1{
+    color: #e82929;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.texts p{
+    width: 80%;
+    margin-bottom: 70px;
+}
+.texts a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e82929;
+}
+.texts a:active{
+    background-color: white;
+    color: #181f32;
+}
+
+
+
+.become{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+    padding: 80px;
+    margin-bottom: 50px;
+}
+.become .video{
+    height: 340px;
+    margin-right: 10px;
+}
+.become .texts2 h2{
+    color: #e82929;
+    font-weight: bold;
+    width: 100%;
+}
+.become .texts2 p{
+    margin-bottom: 70px;
+    width: 80%;
+    line-height: 25px;
+}
+.become .texts2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e82929;
+}
+.become .texts2 a:active{
+    background-color: white;
+    color: #181f32;
+}
+
+
+
+
+
+
+
+.dip{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 60px 0;
+    padding: 80px;
+    margin-bottom: 50px;
+}
+.dip .title h2{
+    color: #e82929;
+    font-weight: bold;
+    width: 100%;
+    font-size: 25px;
+}
+.cards{
+    margin-bottom: 30px;
+    padding: 10px;
+    display: inline-flex;
+    gap: 20px;
+}
+.card{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #e3ecef;
+    text-align: center;
+    
+}
+
+.card img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.card-content{
+    margin: 30px auto;
+}
+.card-content a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.arrows{
+    font-size: 30px;
+    color: red;
+    text-align: right;
+    width: 100%;
+}
+#prevLong, #prevShort, #prevProf, #prevPartner{
+    float: left;
+    font-size: 40px;
+    background-color: #00e8f8;
+    border-radius: 50%;
+    padding:0 5px 10px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+#nextLong, #nextShort, #nextProf, #nextPartner{
+    float: right;
+    font-size: 40px;
+    background-color: #00e8f8;
+    border-radius: 50%;
+    padding:0 5px 10px 5px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.down{
+    background-color: black;
+    padding: 0 70px;
+    margin-bottom: 50px;
+
+}
+.card2{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #e3ecef;
+    text-align: center;
+}
+.card2 img{
+    border-radius: 10px;
+    width: 100%;
+}
+#prevPartner{
+    margin-top: -160px;
+    background-color: white;
+    opacity: .5;
+    margin-left: 15px;
+}
+#nextPartner{
+    margin-top: -160px;
+    background-color: white;
+    opacity: .5;
+    margin-right: -15px;
+}
+
+
+
+
+
+
+.footer{
+    display: inline-flex;
+    border: solid 1px black;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: black;
+}
+.footer .logoLast img{
+    border: solid 1px black;
+    height: 300px;
+}
+.navs{
+    display: inline-flex;
+    text-align: left;
+}
+.navs h2{
+    font-weight: bold;
+    margin-left: 50px;
+    color: #e82929;
+    font-size: 20px;
+}
+.navs ul{
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    text-align: left;
+}
+.navs ul li {
+    list-style-type: none;
+    margin: 0 20px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+}
+.navs ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#contact{
+    width: 350px;
+}
+.navs ul li:hover{
+    color: #e82929;
+}
+.navs ul li a:hover{
+    color: #e82929;
+}
+
+
+
+
+
+.rights{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border-top: 1px dashed white ;
+}
