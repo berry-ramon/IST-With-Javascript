@@ -6,6 +6,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .container{
     width: 100%;
@@ -50,7 +55,7 @@ body{
     justify-content: space-around;
     width: 100%;
     background-color: #ffffff;
-    padding: 40px 0 ;
+    padding: 20px 0 ;
     box-shadow: -1px 1px 5px black;
     font-weight: bold;
     font-size: 15px;
@@ -58,19 +63,36 @@ body{
     position: sticky;
     top: 0;
 }
-.logo{
-    margin-left: -200px;
+.navbar .logo {
+    margin-left: -150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
 }
-.navBtns a{
+.navbar .logo img{
+    height: 65px;
+}
+.navbar .logo span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #00002c;
+    margin-left: 10px;
+}
+#navBtns li{
+    list-style-type: none;
+    display: inline-flex;
+}
+#navBtns li a{
     margin-left: 20px;
     text-decoration: none;
     color: #00002c;
 
 }
-.navBtns a:hover{
+#navBtns li a:hover{
     color: #e82929;
 }
-.navBtns a:active{
+#navBtns a:active{
     color: #e82929;
 }
 
@@ -213,8 +235,8 @@ body{
     
 }
 .cards{
-    margin-bottom: 30px;
-    padding: 10px 0 ;
+    margin-bottom: 0px;
+    padding: 0px 0 ;
     display: inline-flex;
     gap: 20px;
     overflow: scroll;
@@ -229,6 +251,7 @@ body{
     border-radius: 10px;
     background-color: #e3ecef;
     text-align: center;
+    margin-left: 5px;
 }
 
 .card img{
@@ -280,11 +303,12 @@ body{
 
 }
 .card2{
-    width: 350px;
+    width: 385px;
     height: 200px;
     border-radius: 10px;
     background-color: #e3ecef;
     text-align: center;
+    overflow-y: hidden;
 }
 .card2 img{
     border-radius: 10px;
