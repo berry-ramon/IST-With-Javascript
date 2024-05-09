@@ -4,18 +4,6 @@ const cards2 = document.querySelector(".cards2");
 const cards3 = document.querySelector(".cards3");
 const cards4 = document.querySelector(".cards4");
 
-// Getting the Buttons
-const nextBtn = document.getElementById("nextLong");
-const prevBtn = document.getElementById("prevLong");
-
-const nextBtn2 = document.getElementById("nextShort");
-const prevBtn2 = document.getElementById("prevShort");
-
-const nextBtn3 = document.getElementById("nextProf");
-const prevBtn3 = document.getElementById("prevProf");
-
-const nextBtn4 = document.getElementById("nextPartner");
-const prevBtn4 = document.getElementById("prevPartner");
 // Navbar links
 const navBtns = document.getElementById("navBtns");
 //Getting the footer links id's
@@ -193,6 +181,65 @@ const LastCard = (cardsNumber, start, end) => {
 };
 LastCard(cards4, 18, 25);
 
+//An Aray of Objects containing the values for the ids
+let arrowsId = [
+  {
+    next: "nextLong",
+    prev: "prevLong",
+  },
+  {
+    next: "nextShort",
+    prev: "prevShort",
+  },
+  {
+    next: "nextProf",
+    prev: "prevProf",
+  },
+  {
+    next: "nextPartner",
+    prev: "prevPartner",
+  },
+];
+
+//Function for the buttons
+//Getting the arrows classname
+const arrows1 = document.getElementById("arrows1");
+const arrows2 = document.getElementById("arrows2");
+const arrows3 = document.getElementById("arrows3");
+const arrows4 = document.getElementById("arrows4");
+
+const btnsDisplayer = (arrowNumber, start, end) => {
+  for (let i = start; i < end; i++) {
+    const arrowContent = arrowsId[i];
+
+    let span = document.createElement("span");
+    span.id = arrowContent.prev;
+    span.textContent = "←";
+    let span2 = document.createElement("span");
+    span2.id = arrowContent.next;
+    span2.textContent = "→";
+
+    arrowNumber.appendChild(span);
+    arrowNumber.appendChild(span2);
+  }
+};
+btnsDisplayer(arrows1, 0, 1);
+btnsDisplayer(arrows2, 1, 2);
+btnsDisplayer(arrows3, 2, 3);
+btnsDisplayer(arrows4, 3, 4);
+
+// Getting the Buttons
+const nextBtn = document.getElementById("nextLong");
+const prevBtn = document.getElementById("prevLong");
+
+const nextBtn2 = document.getElementById("nextShort");
+const prevBtn2 = document.getElementById("prevShort");
+
+const nextBtn3 = document.getElementById("nextProf");
+const prevBtn3 = document.getElementById("prevProf");
+
+const nextBtn4 = document.getElementById("nextPartner");
+const prevBtn4 = document.getElementById("prevPartner");
 //function for the events
 //Next buttons function
 const listenForNext = (btnValue1, cardNumber) => {
